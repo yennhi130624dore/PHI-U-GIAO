@@ -20,3 +20,52 @@
   </table>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Phiếu Giao Dịch</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { text-align: center; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    th, td { border: 1px solid black; padding: 8px; text-align: left; }
+    th { background-color: #e6f3ff; }
+    .total { font-weight: bold; color: green; }
+    .section { background-color: #e6f3ff; padding: 10px; margin: 10px 0; }
+    button { padding: 10px 20px; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <h2>PHIẾU GIAO</h2>
+  <div>SNT: NHI NHI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OCB: YEN NHI</div>
+  <div class="section">
+    <table>
+      <tr><th>Thông Tin</th><th>Giá Trị</th></tr>
+      <tr><td>Ngày gửi:</td><td id="ngayGui">16/09/2024</td></tr>
+      <tr><td>Số tiền:</td><td id="soTien">3,000,000</td></tr>
+      <tr><td>Số Phần:</td><td id="soPhan">12 Kỳ</td></tr>
+    </table>
+  </div>
+  <div class="section">
+    <table>
+      <tr><th>Thanh Toán</th><th>Giá Trị</th></tr>
+      <tr><td>Ngày:</td><td id="ngayThanhToan">16/08/2025</td></tr>
+      <tr><td>Số Kỳ:</td><td id="soKy">12</td></tr>
+      <tr><td>Tham Khảo:</td><td id="thamKhao">300,000</td></tr>
+      <tr><td>Số:</td><td id="so">11 x 3,000,000 = 33,000,000</td></tr>
+      <tr><td>Tiền:</td><td id="tien" class="total">33,000,000</td></tr>
+      <tr><td>Trừ:</td><td id="tru">1,200,000</td></tr>
+      <tr><td>Trừ Giảm:</td><td id="truGiam">31,800,000</td></tr>
+    </table>
+  </div>
+  <p>Còn dỏng lại 0 phần.</p>
+  <button onclick="printBill()">In Hóa Đơn</button>
+
+  <script>
+    function printBill() {
+      window.print();
+    }
+  </script>
+</body>
+</html>
