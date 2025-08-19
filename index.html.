@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Phiếu Giao Dịch</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid black; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    .total { font-weight: bold; color: green; }
+  </style>
+</head>
+<body>
+  <h2>PHIẾU GIAO</h2>
+  <table>
+    <tr><th>Thông Tin</th><th>Giá Trị</th></tr>
+    <tr><td>Ngày gửi:</td><td>10/08/2025</td></tr>
+    <tr><td>Số tiền:</td><td>5,000,000</td></tr>
+    <tr><td>Tổng cộng:</td><td class="total">5,000,000</td></tr>
+  </table>
+</body>
+</html>
